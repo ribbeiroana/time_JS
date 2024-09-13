@@ -1,50 +1,56 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+VIC:wght@100..400&display=swap');
-:root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   outline: 0;
 }
 
 body {
+  background: url("../img/relogio.jpg") no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
-  background: rgb(227, 161, 222);
-  background: linear-gradient(90deg, rgba(227, 161, 222, 1) 21%, rgba(124, 37, 153, 1) 78%, rgba(83, 2, 137, 1) 94%);
-  font-family: 'Open sans', sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
+}
+
+h1 {
+  text-align: center;
 }
 
 .container {
-  max-width: 640px;
+  max-width: 700px;
   margin: 50px auto;
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-  background: #e0aadc;
-  font-family: "Playfair Display", serif;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  background: rgb(106,73,27);
+  background: linear-gradient(90deg, rgba(106,73,27,1) 4%, rgba(161,117,57,1) 31%, rgba(152,116,78,1) 68%);
   color: #fff;
   padding: 20px;
   border-radius: 10px;
 }
 
-.iniciar, .pausar, .zerar {
+button, .iniciar,
+.pausar,
+.zerar {  
+  background-color: #98744e;
+  color: #fff;
   border: none;
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-  font-family: "Playfair Display", serif;
-  
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.iniciar:hover, .pausar:hover, .zerar:hover{
-  background-color: rgb(190, 190, 175);
+
+.iniciar:hover,
+.pausar:hover,
+.zerar:hover {
+  font-weight: 700;
+  background-color: #6a491b;
+  color: rgb(255, 255, 255);
+  border: none;
 }
+
 
 form input,
 form label,
 form button {
-  display: block;
+  display: flex;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -56,28 +62,25 @@ form input {
 }
 
 form input:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid gray;
 }
 
 form button {
   border: none;
-  background: var(--primary-color);
+  background: #98744e;
   color: #fff;
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
   height: 50px;
-  cursor: pointer;
   margin-top: 30px;
 }
 
-form button:hover {
-  background: var(--primary-color-darker);
-}
-
 .relogio {
-  font-size: 3em;
+  font-size: 7rem;
+  text-align: center;
 }
 
 .pausado {
-  color: red;
+  color: rgb(0, 0, 0);
 }

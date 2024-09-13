@@ -10,10 +10,6 @@ function getTimeFromSecunds(segundos) {
 console.log(getTimeFromSecunds(10));
 
 const relogio = document.querySelector('.relogio');
-// const iniciar = document.querySelector('.iniciar');
-// const pausar = document.querySelector('.pausar');
-// const zerar = document.querySelector('.zerar');
-// os botões já estão sendo selecionados no addEvent...
 let segundos = 0;
 let timer;
 
@@ -25,26 +21,6 @@ function iniciaRelogio() {
   }, 1000);
 }
 
-// iniciar.addEventListener('click', function(e){
-//   relogio.classList.remove('pausado');
-//   clearInterval(timer);
-//   iniciaRelogio()
-// });
-
-// pausar.addEventListener('click', function(e){
-//   clearInterval(timer);
-//   relogio.classList.add('pausado');
-
-// });
-
-// zerar.addEventListener('click', function(e){
-//   clearInterval(timer);
-//   relogio.classList.remove('pausado');
-//   relogio.innerHTML = '00:00:00'
-//   segundos = 0;
-// });
-
-// versão simplificada
 document.addEventListener('click', function (e) {
   const el = e.target; // target para verificar os elementos selecionados 
 

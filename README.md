@@ -1,4 +1,4 @@
-# Jogo Mario com JS
+# TIMER
 
 <div>
     <img src="./assets/img/relogio_tela.png" alt="relogio">
